@@ -1,1365 +1,363 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Дмитро Стойко — Бізнес-аналітик / Project Manager</title>
-
-  <meta
-    name="description"
-    content="Бізнес-аналітик і Project Manager цифрової трансформації. Автоматизація виробництва, документообігу, логістики та операційних процесів."
-  >
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b44">
+  <title>Дмитро Стойко — операційний менеджер | бізнес-аналітик процесів</title>
+  <meta name="description" content="Дмитро Стойко — Operations Manager, Business Process Analyst, Business Process Manager. Операційне управління, AS-IS / TO-BE, BPMN, виробництво, логістика, документообіг і управління змінами.">
+  <meta name="keywords" content="Operations Manager, Business Process Analyst, Business Process Manager, операційний менеджер, бізнес-аналітик процесів, BPMN, AS-IS, TO-BE, process improvement, process optimization, виробниче планування, логістика, документообіг, KPI, Change Management, Київ">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Дмитро Стойко — операційний менеджер / бізнес-аналітик процесів">
+  <meta property="og:description" content="Перетворюю складні операційні процеси на прозорі, керовані системи.">
+  <meta property="og:url" content="https://dy-ba-pm.github.io/dmytro-stoyko-cv/">
+  <link rel="canonical" href="https://dy-ba-pm.github.io/dmytro-stoyko-cv/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Дмитро Стойко",
+    "jobTitle": ["Operations Manager", "Business Process Analyst", "Business Process Manager"],
+    "email": "mailto:olimpieva103@gmail.com",
+    "telephone": "+380950545287",
+    "address": {"@type": "PostalAddress", "addressLocality": "Київ", "addressCountry": "UA"},
+    "sameAs": ["https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%BE-%D1%81%D1%82%D0%BE%D0%B9%D0%BA%D0%BE-402515274/"]
+  }
+  </script>
   <style>
     :root {
-      --dark: #102b3a;
-      --dark-light: #183e4f;
-      --accent: #177b80;
-      --accent-light: #c8ebea;
-      --background: #f7f8f5;
-      --white: #ffffff;
-      --text-muted: #66757b;
-      --border: #dbe2df;
-      --soft: #edf3f1;
+      --ink: #102f37;
+      --ink-2: #24464d;
+      --accent: #147d78;
+      --accent-2: #d8eeea;
+      --paper: #f5f5f0;
+      --white: #fff;
+      --muted: #617479;
+      --line: #d8dfdc;
+      --night: #0d3139;
+      --shadow: 0 24px 70px rgba(16,47,55,.12);
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      color: var(--dark);
-      background: var(--background);
-      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.55;
     }
-
-    a {
-      color: inherit;
-      text-decoration: none;
+    a { color: inherit; text-decoration: none; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .wrap { width: min(1160px, calc(100% - 40px)); margin-inline: auto; }
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
     }
-
-    .container {
-      width: min(1160px, calc(100% - 40px));
-      margin: 0 auto;
+    .eyebrow::before { width: 28px; height: 2px; content: ""; background: currentColor; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 19px;
+      border: 1px solid var(--ink);
+      border-radius: 12px;
+      color: var(--white);
+      background: var(--ink);
+      font-size: 13px;
+      font-weight: 800;
+      transition: transform .2s, background .2s, border-color .2s;
     }
+    .button:hover { transform: translateY(-2px); background: var(--accent); border-color: var(--accent); }
+    .button.light { color: var(--ink); background: var(--white); border-color: var(--white); }
+    .button.light:hover { color: var(--white); background: var(--accent); border-color: var(--accent); }
 
-    /* Навігація */
-
-    .header {
+    header {
       position: sticky;
       top: 0;
-      z-index: 100;
-      background: rgba(247, 248, 245, 0.94);
-      border-bottom: 1px solid var(--border);
-      backdrop-filter: blur(14px);
+      z-index: 10;
+      border-bottom: 1px solid rgba(216,223,220,.9);
+      background: rgba(245,245,240,.92);
+      backdrop-filter: blur(15px);
     }
-
-    .header-inner {
-      min-height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .brand-logo {
+    .nav-row { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .monogram {
       width: 42px;
       height: 42px;
       display: grid;
       place-items: center;
       border-radius: 13px;
       color: var(--white);
-      background: var(--dark);
-      font-size: 13px;
-      font-weight: 800;
-    }
-
-    .brand-text {
-      display: grid;
-      gap: 3px;
-    }
-
-    .brand-text strong {
-      font-size: 14px;
-    }
-
-    .brand-text span {
-      color: var(--text-muted);
-      font-size: 10px;
-    }
-
-    .navigation {
-      display: flex;
-      gap: 28px;
-      color: var(--text-muted);
-      font-size: 13px;
-      font-weight: 700;
-    }
-
-    .navigation a:hover {
-      color: var(--accent);
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 13px 18px;
-      border-radius: 11px;
-      color: var(--white);
-      background: var(--dark);
-      font-size: 13px;
-      font-weight: 800;
-      transition: 0.2s;
-    }
-
-    .button:hover {
-      background: var(--accent);
-      transform: translateY(-2px);
-    }
-
-    .menu-button {
-      display: none;
-      padding: 9px 12px;
-      border: 1px solid var(--border);
-      border-radius: 9px;
-      color: var(--dark);
-      background: var(--white);
-      font-weight: 700;
-      cursor: pointer;
-    }
-
-    /* Головний блок */
-
-    .hero {
-      padding: 88px 0 72px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.3fr) minmax(320px, 0.7fr);
-      gap: 70px;
-      align-items: end;
-    }
-
-    .label {
-      margin: 0 0 20px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--accent);
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-    }
-
-    .label::before {
-      content: "";
-      width: 28px;
-      height: 2px;
-      background: currentColor;
-    }
-
-    h1 {
-      max-width: 800px;
-      margin: 0;
-      font-size: clamp(42px, 6.4vw, 78px);
-      line-height: 0.98;
-      letter-spacing: -0.055em;
-    }
-
-    h1 span {
-      display: block;
-      color: var(--accent);
-    }
-
-    .hero-role {
-      margin: 28px 0 0;
-      font-size: 17px;
-      font-weight: 800;
-    }
-
-    .hero-description {
-      max-width: 760px;
-      margin: 15px 0 0;
-      color: var(--text-muted);
-      font-size: 16px;
-      line-height: 1.65;
-    }
-
-    .hero-actions {
-      display: flex;
-      align-items: center;
-      gap: 26px;
-      margin-top: 32px;
-    }
-
-    .text-link {
-      padding: 12px 3px;
-      border-bottom: 1px solid var(--dark);
-      font-size: 13px;
-      font-weight: 800;
-    }
-
-    .result-card {
-      position: relative;
-      overflow: hidden;
-      padding: 34px;
-      border-radius: 28px;
-      color: var(--white);
-      background: var(--dark);
-      box-shadow: 0 25px 65px rgba(16, 43, 58, 0.18);
-    }
-
-    .result-card small {
-      color: #99c5c4;
-      font-size: 10px;
-      font-weight: 800;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-    }
-
-    .result-number {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-top: 18px;
-      font-size: 24px;
-      font-weight: 800;
-    }
-
-    .result-number i {
-      color: #6ac2c2;
-      font-style: normal;
-    }
-
-    .result-card h2 {
-      margin: 14px 0 25px;
-      color: #d8efee;
-      font-size: 15px;
-    }
-
-    .result-card ul {
-      margin: 0;
-      padding: 0;
-      display: grid;
-      gap: 12px;
-      color: #d8e5e7;
-      list-style: none;
-      font-size: 13px;
-    }
-
-    .result-card b {
-      margin-right: 7px;
-      color: var(--white);
-      font-size: 17px;
-    }
-
-    /* Показники */
-
-    .metrics {
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      background: var(--white);
-    }
-
-    .metrics-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    .metric {
-      padding: 27px 24px;
-      border-right: 1px solid var(--border);
-    }
-
-    .metric:first-child {
-      border-left: 1px solid var(--border);
-    }
-
-    .metric strong {
-      display: block;
-      color: var(--accent);
-      font-size: 19px;
-    }
-
-    .metric span {
-      display: block;
-      margin-top: 6px;
-      color: var(--text-muted);
-      font-size: 11px;
-    }
-
-    /* Загальні секції */
-
-    .section {
-      padding: 100px 0;
-    }
-
-    .section-soft {
-      background: var(--soft);
-    }
-
-    .section-dark {
-      color: var(--white);
-      background: var(--dark);
-    }
-
-    .section-header {
-      display: grid;
-      grid-template-columns: 1fr minmax(280px, 440px);
-      gap: 60px;
-      align-items: end;
-      margin-bottom: 52px;
-    }
-
-    .section-header h2 {
-      margin: 0;
-      font-size: clamp(34px, 5vw, 57px);
-      line-height: 1.03;
-      letter-spacing: -0.045em;
-    }
-
-    .section-header > p {
-      margin: 0;
-      color: var(--text-muted);
-      font-size: 15px;
-      line-height: 1.65;
-    }
-
-    .section-dark .section-header > p {
-      color: #a8bfc7;
-    }
-
-    /* Проєкти */
-
-    .projects {
-      border-top: 1px solid var(--border);
-    }
-
-    .project {
-      display: grid;
-      grid-template-columns: 68px minmax(0, 1fr) 280px;
-      gap: 34px;
-      padding: 42px 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .project-number {
-      color: #9aabae;
+      background: var(--ink);
       font-size: 12px;
-      font-weight: 800;
+      font-weight: 900;
+      letter-spacing: .05em;
     }
+    .brand-copy { display: grid; gap: 2px; }
+    .brand-copy strong { font-size: 14px; }
+    .brand-copy span { color: var(--muted); font-size: 10px; }
+    nav { display: flex; align-items: center; gap: 26px; color: var(--muted); font-size: 12px; font-weight: 750; }
+    nav a:hover { color: var(--accent); }
+    .menu { display: none; padding: 9px 12px; border: 1px solid var(--line); border-radius: 10px; color: var(--ink); background: var(--white); font-weight: 750; }
 
-    .project-type {
-      margin: 0 0 7px;
-      color: var(--accent);
-      font-size: 10px;
-      font-weight: 800;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-    }
+    .hero { padding: 86px 0 70px; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0,1.25fr) minmax(300px,.75fr); gap: 68px; align-items: end; }
+    h1 { max-width: 850px; margin: 0; font-size: clamp(48px, 7vw, 82px); line-height: .96; letter-spacing: -.06em; }
+    h1 span { display: block; color: var(--accent); }
+    .role { margin: 28px 0 0; font-size: 18px; font-weight: 850; }
+    .role-en { margin: 6px 0 0; color: var(--accent); font-size: 12px; font-weight: 700; }
+    .lead { max-width: 760px; margin: 18px 0 0; color: var(--muted); font-size: 16px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 30px; }
+    .profile-card { padding: 32px; border-radius: 28px; color: var(--white); background: var(--night); box-shadow: var(--shadow); }
+    .profile-card small { color: #87c9c3; font-size: 10px; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
+    .profile-card h2 { margin: 16px 0 10px; font-size: 25px; line-height: 1.15; }
+    .profile-card p { margin: 0; color: #bed1d4; font-size: 13px; }
+    .profile-card ul { margin: 24px 0 0; padding: 20px 0 0; display: grid; gap: 11px; border-top: 1px solid rgba(255,255,255,.16); list-style: none; font-size: 12px; }
+    .profile-card li::before { margin-right: 9px; color: #61c5bb; content: "●"; font-size: 8px; }
 
-    .project h3 {
-      margin: 0;
-      font-size: 25px;
-      letter-spacing: -0.025em;
-    }
+    .metrics { border-block: 1px solid var(--line); background: var(--white); }
+    .metrics-grid { display: grid; grid-template-columns: repeat(4,1fr); }
+    .metric { min-height: 108px; padding: 25px 23px; border-right: 1px solid var(--line); }
+    .metric:first-child { border-left: 1px solid var(--line); }
+    .metric strong { display: block; color: var(--accent); font-size: 20px; line-height: 1.2; }
+    .metric span { display: block; margin-top: 7px; color: var(--muted); font-size: 11px; }
 
-    .project-description {
-      max-width: 620px;
-      margin: 12px 0 0;
-      color: var(--text-muted);
-      font-size: 14px;
-      line-height: 1.65;
-    }
+    section.content { padding: 96px 0; }
+    .soft { background: #eaf0ed; }
+    .dark { color: var(--white); background: var(--night); }
+    .section-head { display: grid; grid-template-columns: 1fr minmax(280px,430px); gap: 60px; align-items: end; margin-bottom: 48px; }
+    .section-head h2 { margin: 0; font-size: clamp(35px,5vw,57px); line-height: 1.02; letter-spacing: -.045em; }
+    .section-head > p { margin: 0; color: var(--muted); font-size: 14px; }
+    .dark .section-head > p { color: #a9c0c4; }
 
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-      margin-top: 20px;
-    }
+    .result-list { border-top: 1px solid var(--line); }
+    .result { display: grid; grid-template-columns: 60px minmax(0,1fr) 260px; gap: 34px; padding: 35px 0; border-bottom: 1px solid var(--line); }
+    .result-num { color: #91a2a5; font-size: 11px; font-weight: 850; }
+    .result h3 { margin: 0; font-size: 22px; line-height: 1.25; }
+    .result p { margin: 10px 0 0; color: var(--muted); font-size: 13px; }
+    .result-mark { padding-left: 22px; border-left: 1px solid var(--line); color: var(--accent); font-size: 15px; font-weight: 850; }
 
-    .tags span {
-      padding: 7px 10px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      background: var(--white);
-      font-size: 10px;
-      font-weight: 700;
-    }
+    .method { margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4,1fr); border-top: 1px solid rgba(255,255,255,.17); list-style: none; }
+    .method li { min-height: 205px; padding: 24px; display: flex; flex-direction: column; border-right: 1px solid rgba(255,255,255,.17); }
+    .method li:first-child { border-left: 1px solid rgba(255,255,255,.17); }
+    .method b { color: #67c9c0; font-size: 11px; }
+    .method strong { margin-top: auto; font-size: 18px; }
+    .method span { margin-top: 9px; color: #a9c0c4; font-size: 12px; }
 
-    .project-result {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 22px;
-      padding-left: 24px;
-      border-left: 1px solid var(--border);
-    }
+    .timeline { border-top: 1px solid var(--line); }
+    .job { display: grid; grid-template-columns: 230px minmax(0,1fr); gap: 50px; padding: 36px 0; border-bottom: 1px solid var(--line); }
+    .job-date { color: var(--accent); font-size: 12px; font-weight: 850; }
+    .job-date small { display: block; margin-top: 7px; color: var(--muted); font-weight: 500; }
+    .job h3 { margin: 0; font-size: 21px; line-height: 1.25; }
+    .company { margin: 5px 0 15px; color: var(--accent); font-size: 12px; font-weight: 800; }
+    .job ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 13px; }
+    .job li + li { margin-top: 7px; }
+    details { margin-top: 24px; border: 1px solid var(--line); border-radius: 18px; background: var(--white); }
+    summary { padding: 20px 24px; font-size: 13px; font-weight: 850; cursor: pointer; }
+    .older { padding: 3px 24px 24px; display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; }
+    .older article { padding: 20px; border-radius: 13px; background: var(--paper); }
+    .older small { color: var(--accent); font-size: 10px; font-weight: 850; }
+    .older h3 { margin: 7px 0 3px; font-size: 15px; }
+    .older b { color: var(--muted); font-size: 10px; }
+    .older p { margin: 10px 0 0; color: var(--muted); font-size: 11px; }
 
-    .project-result strong {
-      color: var(--accent);
-      font-size: 22px;
-      line-height: 1.2;
-    }
+    .skills { display: grid; grid-template-columns: repeat(3,1fr); gap: 15px; }
+    .skill { padding: 27px; border: 1px solid var(--line); border-radius: 19px; background: var(--white); }
+    .skill h3 { margin: 0 0 17px; font-size: 17px; }
+    .skill ul { margin: 0; padding: 0; display: grid; gap: 9px; color: var(--muted); list-style: none; font-size: 12px; }
+    .skill li { padding-bottom: 9px; border-bottom: 1px solid #edf0ee; }
+    .education { display: grid; grid-template-columns: 1.2fr 1fr .8fr; gap: 15px; margin-top: 15px; }
+    .edu { padding: 25px; border-radius: 19px; color: var(--white); background: var(--night); }
+    .edu p { margin: 0 0 13px; color: #69c9c0; font-size: 9px; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
+    .edu h3 { margin: 0; font-size: 14px; line-height: 1.4; }
+    .edu span { display: block; margin-top: 9px; color: #abc2c6; font-size: 10px; }
 
-    .project-result span {
-      color: var(--text-muted);
-      font-size: 10px;
-      line-height: 1.5;
-    }
-
-    /* Процес роботи */
-
-    .process {
-      margin: 0;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      list-style: none;
-      border-top: 1px solid rgba(255,255,255,0.17);
-    }
-
-    .process li {
-      min-height: 210px;
-      padding: 25px 24px;
-      display: flex;
-      flex-direction: column;
-      border-right: 1px solid rgba(255,255,255,0.17);
-    }
-
-    .process li:first-child {
-      border-left: 1px solid rgba(255,255,255,0.17);
-    }
-
-    .process b {
-      color: #6ac2c2;
-      font-size: 11px;
-    }
-
-    .process strong {
-      margin-top: auto;
-      font-size: 17px;
-    }
-
-    .process span {
-      margin-top: 10px;
-      color: #a8bfc7;
-      font-size: 12px;
-      line-height: 1.55;
-    }
-
-    /* Досвід */
-
-    .timeline {
-      border-top: 1px solid var(--border);
-    }
-
-    .timeline-item {
-      display: grid;
-      grid-template-columns: 250px minmax(0, 1fr);
-      gap: 50px;
-      padding: 38px 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .timeline-date {
-      display: grid;
-      align-content: start;
-      gap: 7px;
-      color: var(--accent);
-      font-size: 12px;
-      font-weight: 800;
-    }
-
-    .timeline-date small {
-      color: var(--text-muted);
-      font-size: 10px;
-      font-weight: 400;
-    }
-
-    .timeline-item h3 {
-      margin: 0;
-      font-size: 22px;
-    }
-
-    .company {
-      margin: 5px 0 17px;
-      color: var(--accent);
-      font-size: 12px;
-      font-weight: 800;
-    }
-
-    .timeline-item ul {
-      margin: 0;
-      padding-left: 18px;
-      color: var(--text-muted);
-      font-size: 13px;
-      line-height: 1.7;
-    }
-
-    details {
-      margin-top: 26px;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      background: var(--white);
-    }
-
-    summary {
-      padding: 20px 24px;
-      font-size: 13px;
-      font-weight: 800;
-      cursor: pointer;
-    }
-
-    .earlier-grid {
-      padding: 5px 24px 24px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-    }
-
-    .earlier-card {
-      padding: 20px;
-      border-radius: 12px;
-      background: var(--soft);
-    }
-
-    .earlier-card small {
-      color: var(--accent);
-      font-size: 9px;
-      font-weight: 800;
-    }
-
-    .earlier-card h3 {
-      margin: 8px 0 4px;
-      font-size: 14px;
-    }
-
-    .earlier-card b {
-      color: var(--text-muted);
-      font-size: 10px;
-    }
-
-    .earlier-card p {
-      margin: 10px 0 0;
-      color: var(--text-muted);
-      font-size: 11px;
-      line-height: 1.5;
-    }
-
-    /* Навички та освіта */
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-
-    .skill-card {
-      padding: 28px;
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      background: var(--white);
-    }
-
-    .skill-card h3 {
-      margin: 0 0 18px;
-      font-size: 17px;
-    }
-
-    .skill-card ul {
-      margin: 0;
-      padding: 0;
-      display: grid;
-      gap: 10px;
-      color: var(--text-muted);
-      list-style: none;
-      font-size: 12px;
-    }
-
-    .skill-card li {
-      padding-bottom: 9px;
-      border-bottom: 1px solid #edf0ee;
-    }
-
-    .education-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr 0.8fr;
-      gap: 16px;
-      margin-top: 16px;
-    }
-
-    .education-card {
-      padding: 26px 28px;
-      border-radius: 20px;
-      color: var(--white);
-      background: var(--dark);
-    }
-
-    .education-card p {
-      margin: 0 0 16px;
-      color: #6ac2c2;
-      font-size: 9px;
-      font-weight: 800;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-    }
-
-    .education-card h3 {
-      margin: 0;
-      font-size: 14px;
-      line-height: 1.4;
-    }
-
-    .education-card span {
-      display: block;
-      margin-top: 10px;
-      color: #a8bfc7;
-      font-size: 10px;
-      line-height: 1.5;
-    }
-
-    /* Контакти */
-
-    .contact {
-      padding: 100px 0;
-      color: var(--white);
-      background: var(--accent);
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 430px;
-      gap: 80px;
-    }
-
-    .contact h2 {
-      margin: 0;
-      font-size: clamp(34px, 5vw, 57px);
-      line-height: 1.03;
-      letter-spacing: -0.045em;
-    }
-
-    .contact .label {
-      color: var(--accent-light);
-    }
-
-    .contact-links {
-      border-top: 1px solid rgba(255,255,255,0.35);
-    }
-
-    .contact-links a {
-      display: grid;
-      grid-template-columns: 70px 1fr auto;
-      gap: 18px;
-      align-items: center;
-      padding: 18px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.35);
-    }
-
-    .contact-links span {
-      font-size: 9px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      opacity: 0.75;
-    }
-
-    .contact-links strong {
-      overflow-wrap: anywhere;
-      font-size: 13px;
-    }
-
-    footer {
-      color: #a8bfc7;
-      background: var(--dark);
-    }
-
-    .footer-inner {
-      min-height: 74px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 10px;
-    }
-
-    /* Адаптація */
+    .contact { padding: 90px 0; color: var(--white); background: var(--accent); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 420px; gap: 70px; }
+    .contact h2 { margin: 0; font-size: clamp(35px,5vw,56px); line-height: 1.03; letter-spacing: -.045em; }
+    .contact .eyebrow { color: var(--accent-2); }
+    .links { border-top: 1px solid rgba(255,255,255,.36); }
+    .links a { display: grid; grid-template-columns: 66px minmax(0,1fr) auto; gap: 15px; align-items: center; padding: 17px 0; border-bottom: 1px solid rgba(255,255,255,.36); }
+    .links span { font-size: 9px; letter-spacing: .1em; text-transform: uppercase; opacity: .78; }
+    .links strong { overflow-wrap: anywhere; font-size: 13px; }
+    footer { color: #aac1c5; background: var(--night); }
+    .footer-row { min-height: 72px; display: flex; align-items: center; justify-content: space-between; font-size: 10px; }
 
     @media (max-width: 900px) {
-      .navigation {
-        display: none;
-        position: absolute;
-        top: 68px;
-        left: 0;
-        right: 0;
-        padding: 20px;
-        background: var(--background);
-        border-bottom: 1px solid var(--border);
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .navigation.open {
-        display: flex;
-      }
-
-      .menu-button {
-        display: block;
-      }
-
-      .header .button {
-        display: none;
-      }
-
-      .hero-grid,
-      .section-header,
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .project {
-        grid-template-columns: 46px minmax(0, 1fr);
-      }
-
-      .project-result {
-        grid-column: 2;
-        padding: 18px 0 0;
-        border-top: 1px solid var(--border);
-        border-left: 0;
-      }
-
-      .metrics-grid,
-      .process {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .skills-grid,
-      .education-grid {
-        grid-template-columns: 1fr;
-      }
+      nav { display: none; position: absolute; inset: 74px 0 auto; padding: 20px; align-items: flex-start; flex-direction: column; border-bottom: 1px solid var(--line); background: var(--paper); }
+      nav.open { display: flex; }
+      .menu { display: block; }
+      header .button { display: none; }
+      .hero-grid, .section-head, .contact-grid { grid-template-columns: 1fr; }
+      .metrics-grid, .method { grid-template-columns: repeat(2,1fr); }
+      .result { grid-template-columns: 42px minmax(0,1fr); }
+      .result-mark { grid-column: 2; padding: 15px 0 0; border-top: 1px solid var(--line); border-left: 0; }
+      .skills, .education { grid-template-columns: 1fr; }
     }
-
     @media (max-width: 620px) {
-      .container {
-        width: calc(100% - 28px);
-      }
-
-      .brand-text span {
-        display: none;
-      }
-
-      .hero {
-        padding: 50px 0;
-      }
-
-      h1 {
-        font-size: 43px;
-      }
-
-      .hero-actions {
-        align-items: stretch;
-        flex-direction: column;
-      }
-
-      .text-link {
-        width: fit-content;
-      }
-
-      .metrics-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .metric {
-        padding: 21px 15px;
-        border-bottom: 1px solid var(--border);
-      }
-
-      .section {
-        padding: 74px 0;
-      }
-
-      .section-header {
-        gap: 24px;
-        margin-bottom: 38px;
-      }
-
-      .project {
-        grid-template-columns: 32px minmax(0, 1fr);
-        gap: 15px;
-      }
-
-      .process {
-        grid-template-columns: 1fr;
-      }
-
-      .process li {
-        min-height: 150px;
-        border-left: 1px solid rgba(255,255,255,0.17);
-        border-bottom: 1px solid rgba(255,255,255,0.17);
-      }
-
-      .timeline-item {
-        grid-template-columns: 1fr;
-        gap: 16px;
-      }
-
-      .earlier-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .contact {
-        padding: 74px 0;
-      }
-
-      .contact-links a {
-        grid-template-columns: 60px minmax(0, 1fr) auto;
-      }
+      .wrap { width: calc(100% - 28px); }
+      .brand-copy span { display: none; }
+      .hero { padding: 50px 0; }
+      h1 { font-size: 44px; }
+      .actions { align-items: stretch; flex-direction: column; }
+      .metrics-grid { grid-template-columns: 1fr 1fr; }
+      .metric { min-height: 100px; padding: 20px 15px; border-bottom: 1px solid var(--line); }
+      section.content { padding: 72px 0; }
+      .section-head { gap: 22px; margin-bottom: 36px; }
+      .result { grid-template-columns: 30px minmax(0,1fr); gap: 13px; }
+      .method { grid-template-columns: 1fr; }
+      .method li { min-height: 145px; border-left: 1px solid rgba(255,255,255,.17); border-bottom: 1px solid rgba(255,255,255,.17); }
+      .job { grid-template-columns: 1fr; gap: 15px; }
+      .older { grid-template-columns: 1fr; }
+    }
+    @media print {
+      header, .actions, footer { display: none; }
+      body { background: white; }
+      .hero, section.content, .contact { padding: 35px 0; }
+      .profile-card, .dark, .contact, .edu { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
     }
   </style>
 </head>
-
 <body>
-  <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="#top">
-        <span class="brand-logo">DS</span>
-
-        <span class="brand-text">
-          <strong>Дмитро Стойко</strong>
-          <span>Business Analysis · Digital Transformation</span>
-        </span>
+  <header>
+    <div class="wrap nav-row">
+      <a class="brand" href="#top" aria-label="На початок сторінки">
+        <span class="monogram">DS</span>
+        <span class="brand-copy"><strong>Дмитро Стойко</strong><span>Operations Management · Business Process Analysis</span></span>
       </a>
-
-      <nav class="navigation" id="navigation">
-        <a href="#projects">Проєкти</a>
-        <a href="#experience">Досвід</a>
-        <a href="#skills">Компетенції</a>
-        <a href="#contact">Контакти</a>
+      <nav id="nav" aria-label="Головна навігація">
+        <a href="#results">Результати</a><a href="#experience">Досвід</a><a href="#skills">Компетенції</a><a href="#contact">Контакти</a>
       </nav>
-
-      <!-- PDF потрібно покласти поруч із index.html -->
-      <a class="button" href="./Dmytro_Stoiko_CV.pdf.pdf" download>
-        Завантажити CV
-      </a>
-
-      <button
-        class="menu-button"
-        id="menuButton"
-        type="button"
-        aria-controls="navigation"
-        aria-expanded="false"
-      >
-        Меню
-      </button>
+      <a class="button" href="./Dmytro_Stoiko_Operations_Business_Process_CV.pdf" download>Завантажити CV</a>
+      <button class="menu" id="menu" type="button" aria-controls="nav" aria-expanded="false">Меню</button>
     </div>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="container hero-grid">
+      <div class="wrap hero-grid">
         <div>
-          <p class="label">Київська область · Україна</p>
-
-          <h1>
-            Перетворюю складні процеси на
-            <span>керовані цифрові системи.</span>
-          </h1>
-
-          <p class="hero-role">
-            Бізнес-аналітик / Project Manager цифрової трансформації
-          </p>
-
-          <p class="hero-description">
-            Поєдную управлінський досвід у виробництві, логістиці та
-            ритейлі з бізнес-аналізом і проєктуванням систем. Працюю
-            від проблеми та вимог до моделі даних, інтерфейсу й
-            запущеного рішення.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button" href="#projects">Переглянути кейси ↗</a>
-            <a class="text-link" href="#contact">Зв’язатися ↗</a>
-          </div>
+          <p class="eyebrow">Київ / Київська область</p>
+          <h1>Складні процеси — <span>у керовану систему.</span></h1>
+          <p class="role">Операційний менеджер / Бізнес-аналітик процесів</p>
+          <p class="role-en">Operations Manager · Business Process Analyst · Business Process Manager</p>
+          <p class="lead">Аналізую AS-IS, знаходжу втрати та вузькі місця, будую TO-BE, регламентую процеси й координую впровадження змін у виробництві, логістиці, складській діяльності та документообігу.</p>
+          <div class="actions"><a class="button" href="#results">Ключові результати</a><a class="button light" href="./Dmytro_Stoiko_Operations_Business_Process_CV.pdf" download>Завантажити PDF</a></div>
         </div>
-
-        <aside class="result-card">
-          <small>Флагманський результат</small>
-
-          <div class="result-number">
-            <span>3 тижні</span>
-            <i>→</i>
-            <span>40 хвилин</span>
-          </div>
-
-          <h2>Підготовка виробничих планів</h2>
-
-          <ul>
-            <li><b>20</b> виробничих дільниць</li>
-            <li><b>3</b> хвилі відвантаження</li>
-            <li><b>100+</b> позицій у специфікації</li>
-          </ul>
+        <aside class="profile-card">
+          <small>Професійний профіль</small>
+          <h2>Управління процесами та змінами</h2>
+          <p>Практичний досвід у виробничих, складських, логістичних, роздрібних та адміністративних процесах.</p>
+          <ul><li>Команди понад 70 співробітників</li><li>Планування, KPI та Plan / Fact</li><li>Регламенти, ролі й контрольні точки</li><li>Автоматизація як інструмент ефективності</li></ul>
         </aside>
       </div>
     </section>
 
-    <section class="metrics">
-      <div class="container metrics-grid">
-        <div class="metric">
-          <strong>2,5 год → 3 хв</strong>
-          <span>щоденна звітність</span>
-        </div>
+    <section class="metrics" aria-label="Ключові показники">
+      <div class="wrap metrics-grid">
+        <div class="metric"><strong>3 тижні → 40 хв</strong><span>підготовка виробничого плану</span></div>
+        <div class="metric"><strong>20 дільниць</strong><span>у системі планування та контролю</span></div>
+        <div class="metric"><strong>100+ позицій</strong><span>у виробничих специфікаціях</span></div>
+        <div class="metric"><strong>70+ людей</strong><span>досвід управління командою</span></div>
+      </div>
+    </section>
 
-        <div class="metric">
-          <strong>−65%</strong>
-          <span>прострочок за 3 місяці</span>
-        </div>
-
-        <div class="metric">
-          <strong>−97%</strong>
-          <span>помилок в обліку</span>
-        </div>
-
-        <div class="metric">
-          <strong>3 дні → 1 день</strong>
-          <span>інвентаризація</span>
+    <section class="content" id="results">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow">Вимірюваний вплив</p><h2>Ключові результати</h2></div><p>Фокусуюсь не на автоматизації заради автоматизації, а на прозорості процесу, відповідальності та керованому результаті.</p></div>
+        <div class="result-list">
+          <article class="result"><span class="result-num">01</span><div><h3>Оптимізація виробничого планування</h3><p>Проаналізував і стандартизував процес формування плану для складних специфікацій та кількох хвиль відвантаження.</p></div><div class="result-mark">Цикл скорочено з 3 тижнів до 40 хвилин</div></article>
+          <article class="result"><span class="result-num">02</span><div><h3>Єдина система контролю виробництва</h3><p>Побудував планування для 20 дільниць із контролем Plan / Fact, строків, статусів, завантаження та трьох хвиль відвантаження.</p></div><div class="result-mark">20 дільниць · 100+ позицій · 3 хвилі</div></article>
+          <article class="result"><span class="result-num">03</span><div><h3>Договірний документообіг</h3><p>Перебудував процес для договорів, специфікацій, актів, рахунків, накладних і додаткових угод: ролі, маршрути погодження, повернення, скасування та контроль.</p></div><div class="result-mark">Єдині правила й відповідальність</div></article>
+          <article class="result"><span class="result-num">04</span><div><h3>Управління виїзними роботами</h3><p>Спроєктував процеси постановки задач, формування команд, обліку транспорту, часу, пробігу, звітності та контролю виконання.</p></div><div class="result-mark">Від задачі до контрольованого закриття</div></article>
+          <article class="result"><span class="result-num">05</span><div><h3>Операційне та виробниче управління</h3><p>Керував командами й операційними процесами, контролював постачання, склад, роздріб, продуктивність і якість; брав участь у запуску виробничої лінії.</p></div><div class="result-mark">Практичний досвід повного циклу</div></article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <p class="label">Актуальні розробки</p>
-            <h2>Системи, а не окремі скрипти</h2>
-          </div>
-
-          <p>
-            У кожному кейсі я відповідаю за логіку процесу, вимоги,
-            ролі, дані, контрольні точки та доведення рішення до
-            робочого стану.
-          </p>
-        </div>
-
-        <div class="projects">
-          <article class="project">
-            <div class="project-number">01</div>
-
-            <div>
-              <p class="project-type">Виробництво</p>
-              <h3>Система планування виробництва</h3>
-
-              <p class="project-description">
-                Автоматизував формування виробничих планів для складних
-                проєктів: від специфікації до завдань дільницям,
-                контролю строків і хвиль відвантаження.
-              </p>
-
-              <div class="tags">
-                <span>20 виробничих дільниць</span>
-                <span>3 хвилі відвантаження</span>
-                <span>100+ позицій у специфікації</span>
-                <span>План / факт / статус / строки</span>
-              </div>
-            </div>
-
-            <div class="project-result">
-              <strong>3 тижні → 40 хвилин</strong>
-              <span>Google Apps Script · Google Sheets · Web App</span>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project-number">02</div>
-
-            <div>
-              <p class="project-type">Документообіг</p>
-              <h3>Вебсистема погодження документів</h3>
-
-              <p class="project-description">
-                Спроєктував систему договірного документообігу з ролями,
-                маршрутами погодження, чеклістами, історією дій і
-                пов’язаними документами.
-              </p>
-
-              <div class="tags">
-                <span>5 ролей і розмежування доступу</span>
-                <span>LEGAL → FINANCE → DIRECTOR</span>
-                <span>Акти, специфікації, рахунки, накладні</span>
-                <span>Повернення, скасування та історія</span>
-              </div>
-            </div>
-
-            <div class="project-result">
-              <strong>Єдиний маршрут і контроль</strong>
-              <span>
-                PostgreSQL / Neon · Cloudflare Workers · TypeScript ·
-                SPA · Google OAuth
-              </span>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project-number">03</div>
-
-            <div>
-              <p class="project-type">Польові команди</p>
-              <h3>Мобільні процеси в ALMEXOFT</h3>
-
-              <p class="project-description">
-                Спроєктував BPM-процеси для диспетчерів, бригадирів,
-                водіїв і контролерів із мобільним сценарієм виконання
-                робіт.
-              </p>
-
-              <div class="tags">
-                <span>Завдання, виконавець і команда</span>
-                <span>Час, геодані, пробіг і пальне</span>
-                <span>Фото до / після та документи</span>
-                <span>Денні звіти й повернення на виконання</span>
-              </div>
-            </div>
-
-            <div class="project-result">
-              <strong>Від виїзду до контрольованого закриття</strong>
-              <span>ALMEXOFT BPM · Role model · Mobile workflows</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <p class="label">Моя роль</p>
-            <h2>Від хаосу до працюючого рішення</h2>
-          </div>
-
-          <p>
-            Не обмежуюсь описом вимог. Вибудовую повний контур:
-            процес, відповідальність, дані, інтерфейс, контроль і
-            впровадження.
-          </p>
-        </div>
-
-        <ol class="process">
-          <li>
-            <b>01</b>
-            <strong>Діагностика</strong>
-            <span>Процес AS-IS, проблеми, втрати, вузькі місця</span>
-          </li>
-
-          <li>
-            <b>02</b>
-            <strong>Проєктування</strong>
-            <span>TO-BE, ролі, статуси, правила, модель даних</span>
-          </li>
-
-          <li>
-            <b>03</b>
-            <strong>Реалізація</strong>
-            <span>ТЗ, прототип, API, інтеграції, тестування</span>
-          </li>
-
-          <li>
-            <b>04</b>
-            <strong>Запуск</strong>
-            <span>Навчання, адаптація, контроль і розвиток системи</span>
-          </li>
+    <section class="content dark">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow">Підхід до роботи</p><h2>Від AS-IS до стійких змін</h2></div><p>Поєдную процесний аналіз, операційний досвід, регламентацію та цифрові інструменти.</p></div>
+        <ol class="method">
+          <li><b>01</b><strong>Діагностика</strong><span>Поточний стан, втрати, вузькі місця, причини відхилень</span></li>
+          <li><b>02</b><strong>Модель TO-BE</strong><span>Порядок операцій, ролі, відповідальність і контрольні точки</span></li>
+          <li><b>03</b><strong>Регламентація</strong><span>ТЗ, бізнес-правила, інструкції, чек-листи та критерії приймання</span></li>
+          <li><b>04</b><strong>Впровадження</strong><span>Координація учасників, контроль реалізації, KPI та розвиток</span></li>
         </ol>
       </div>
     </section>
 
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <p class="label">Кар’єра</p>
-            <h2>Досвід роботи</h2>
-          </div>
-        </div>
-
+    <section class="content" id="experience">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow">Кар'єра</p><h2>Досвід роботи</h2></div><p>Поєднання операційного управління, виробництва, логістики, якості та аналізу бізнес-процесів.</p></div>
         <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">
-              <span>Травень 2025 — дотепер</span>
-              <small>Київська область</small>
-            </div>
-
-            <div>
-              <h3>Менеджер проєктів / Бізнес-аналітик</h3>
-              <p class="company">ТОВ «Фасад майстер»</p>
-
-              <ul>
-                <li>
-                  Аналіз і оптимізація виробничих, логістичних,
-                  управлінських процесів та документообігу.
-                </li>
-                <li>
-                  Збір і формалізація вимог: AS-IS / TO-BE, BRD,
-                  User Stories, ТЗ, бізнес-правила та критерії приймання.
-                </li>
-                <li>
-                  Проєктування моделей даних, REST API, рольових моделей,
-                  статусів і маршрутів погодження.
-                </li>
-                <li>
-                  Прототипування інтерфейсів, координація стейкхолдерів,
-                  тестування та запуск змін.
-                </li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">
-              <span>Січень 2024 — травень 2025</span>
-              <small>Ужгород</small>
-            </div>
-
-            <div>
-              <h3>Керівник складу / Менеджер систем якості</h3>
-              <p class="company">ТОВ «Техно-Друк»</p>
-
-              <ul>
-                <li>
-                  Організація складської логістики та обліку в 1С;
-                  контроль якості відповідно до ISO 9001.
-                </li>
-                <li>
-                  Цифровізація звітності, контрольних чеклістів і
-                  внутрішніх процедур якості.
-                </li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">
-              <span>Жовтень 2022 — січень 2024</span>
-              <small>Ужгород</small>
-            </div>
-
-            <div>
-              <h3>Операційний керуючий магазинами</h3>
-              <p class="company">ТОВ «База»</p>
-
-              <ul>
-                <li>
-                  Відкриття нових магазинів, управління командами та
-                  виконанням операційних планів.
-                </li>
-                <li>
-                  Облікові системи, інвентаризації та стандарти
-                  взаємодії персоналу.
-                </li>
-              </ul>
-            </div>
-          </article>
+          <article class="job"><div class="job-date">Травень 2025 — дотепер<small>Київська область</small></div><div><h3>Менеджер проєктів / Бізнес-аналітик</h3><p class="company">ТОВ «Фасад Сервіс»</p><ul><li>Аналіз і оптимізація виробничих, логістичних, управлінських процесів та документообігу.</li><li>Моделі AS-IS / TO-BE, ролі, контрольні точки та правила переходу між етапами.</li><li>Система планування для 20 виробничих дільниць; цикл підготовки плану скорочено з 3 тижнів до 40 хвилин.</li><li>ТЗ, схеми процесів, бізнес-правила, User Stories, критерії приймання, інструкції та прототипи.</li><li>Координація змін між керівництвом, користувачами та технічними виконавцями; Kanban, звіти й дашборди.</li></ul></div></article>
+          <article class="job"><div class="job-date">Січень 2024 — травень 2025<small>Ужгород</small></div><div><h3>Керівник складу / Менеджер систем якості</h3><p class="company">ТОВ «Техно-Друк»</p><ul><li>Організація приймання, зберігання, обліку та видачі матеріалів.</li><li>Удосконалення внутрішніх процесів, чек-листів і звітності.</li><li>Система менеджменту якості та внутрішні аудити за ISO 9001; цифровізація операційного контролю.</li></ul></div></article>
+          <article class="job"><div class="job-date">Жовтень 2022 — січень 2024<small>Ужгород</small></div><div><h3>Операційний керуючий магазинами</h3><p class="company">ТОВ «База»</p><ul><li>Операційна діяльність торгових об'єктів і відкриття нових магазинів.</li><li>Координація персоналу, операційні плани, облік, інвентаризації та товарні залишки.</li><li>Стандарти роботи та взаємодія між магазинами, складом і суміжними підрозділами.</li></ul></div></article>
         </div>
-
-        <details>
-          <summary>Попередній управлінський досвід</summary>
-
-          <div class="earlier-grid">
-            <article class="earlier-card">
-              <small>2021 — 2022</small>
-              <h3>Заступник керуючого магазином</h3>
-              <b>SPAR</b>
-              <p>
-                Команда 100+ співробітників, постачання, склад і
-                роздрібні процеси.
-              </p>
-            </article>
-
-            <article class="earlier-card">
-              <small>2019 — 2021</small>
-              <h3>Начальник виробництва</h3>
-              <b>Завод із переробки вторсировини</b>
-              <p>
-                Запуск лінії, технологія, продуктивність, якість і
-                локальна звітність.
-              </p>
-            </article>
-
-            <article class="earlier-card">
-              <small>2015 — 2021</small>
-              <h3>Підприємець</h3>
-              <b>Ритейл і послуги</b>
-              <p>
-                Запуск і розвиток бізнесів, облік, витрати та
-                операційне управління.
-              </p>
-            </article>
-
-            <article class="earlier-card">
-              <small>2011 — 2016</small>
-              <h3>Інженер-конструктор / Заступник начальника цеху</h3>
-              <b>ТОВ «Механік»</b>
-              <p>
-                Планування виробництва та електронна база даних
-                підрозділу.
-              </p>
-            </article>
-          </div>
-        </details>
+        <details><summary>Попередній управлінський і виробничий досвід</summary><div class="older">
+          <article><small>2021 — 2022 · Ужгород</small><h3>Заступник керуючого магазином</h3><b>SPAR, ТОВ «Ужгород П.С.Ю.»</b><p>Команда 70+ співробітників, постачання, складські та торговельні процеси.</p></article>
+          <article><small>2019 — 2021 · Донецьк</small><h3>Начальник виробництва</h3><b>Завод із переробки вторинної сировини</b><p>Запуск лінії, планування завантаження, технологія, продуктивність, якість і звітність.</p></article>
+          <article><small>2015 — 2021 · Донецьк</small><h3>Підприємець</h3><b>Роздрібна торгівля та послуги</b><p>Запуск і розвиток бізнесів, персонал, облік, витрати та операційний контроль.</p></article>
+          <article><small>2011 — 2016 · Донецьк</small><h3>Інженер-конструктор / Заступник начальника цеху</h3><b>ТОВ «Механік»</b><p>Планування виробництва, технічна документація й електронна база даних підрозділу.</p></article>
+        </div></details>
       </div>
     </section>
 
-    <section class="section section-soft" id="skills">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <p class="label">Інструментарій</p>
-            <h2>Ключові компетенції</h2>
-          </div>
+    <section class="content soft" id="skills">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow">Експертиза</p><h2>Ключові компетенції</h2></div><p>Ключові слова та компетенції синхронізовано з актуальним CV для пошуку рекрутерами.</p></div>
+        <div class="skills">
+          <article class="skill"><h3>Операційне управління</h3><ul><li>Operations Management</li><li>Операційне та виробниче планування</li><li>Контроль виконання й координація підрозділів</li><li>Пріоритети, ресурси та операційні ризики</li><li>KPI, Plan / Fact і аналіз відхилень</li></ul></article>
+          <article class="skill"><h3>Бізнес-процеси</h3><ul><li>Business Process Management / Analysis</li><li>AS-IS / TO-BE, BPMN</li><li>Process improvement / optimization</li><li>Вузькі місця, ролі й відповідальність</li><li>Стандартизація операцій</li></ul></article>
+          <article class="skill"><h3>Регламентація та зміни</h3><ul><li>Регламенти, процедури та інструкції</li><li>Чек-листи й бізнес-правила</li><li>ISO 9001 і внутрішні аудити</li><li>Change Management</li><li>Декомпозиція задач і Kanban</li></ul></article>
+          <article class="skill"><h3>Аналітика та облік</h3><ul><li>Excel, Google Sheets, SQL</li><li>Управлінські дашборди</li><li>Строки, статуси й навантаження</li><li>Управлінська звітність</li><li>Підтримка управлінських рішень</li></ul></article>
+          <article class="skill"><h3>Корпоративні системи</h3><ul><li>ALMEXOFT BPM</li><li>Odoo</li><li>Системи електронного документообігу</li><li>Системи управління задачами</li><li>Google Apps Script</li></ul></article>
+          <article class="skill"><h3>AI та цифрові інструменти</h3><ul><li>ChatGPT, OpenAI</li><li>Аналіз бізнес-процесів</li><li>Формування вимог і підготовка ТЗ</li><li>Прототипування рішень</li><li>Проєктування автоматизації</li></ul></article>
         </div>
-
-        <div class="skills-grid">
-          <article class="skill-card">
-            <h3>Бізнес-аналіз</h3>
-            <ul>
-              <li>Збір і формалізація вимог</li>
-              <li>AS-IS / TO-BE</li>
-              <li>BPMN і блок-схеми</li>
-              <li>BRD, User Stories, ТЗ</li>
-              <li>Бізнес-правила й acceptance criteria</li>
-              <li>Рольові моделі та RACI</li>
-            </ul>
-          </article>
-
-          <article class="skill-card">
-            <h3>Проєктування систем</h3>
-            <ul>
-              <li>Моделювання даних</li>
-              <li>REST API та інтеграції</li>
-              <li>Статусні моделі</li>
-              <li>Маршрути погодження</li>
-              <li>Прототипування інтерфейсів</li>
-              <li>UAT і запуск змін</li>
-            </ul>
-          </article>
-
-          <article class="skill-card">
-            <h3>Технології</h3>
-            <ul>
-              <li>Google Apps Script / Google Sheets</li>
-              <li>SQL / PostgreSQL / Neon</li>
-              <li>Cloudflare Workers</li>
-              <li>TypeScript / Python</li>
-              <li>Google OAuth</li>
-              <li>ALMEXOFT BPM / Odoo / 1С</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="education-grid">
-          <article class="education-card">
-            <p>Освіта</p>
-            <h3>Донецький національний технічний університет</h3>
-            <span>
-              Інженер-конструктор металургійного обладнання ·
-              2003–2008
-            </span>
-          </article>
-
-          <article class="education-card">
-            <p>Підготовка</p>
-            <h3>Project Manager · Projektor Institute</h3>
-
-            <!-- Виправлена дата навчання -->
-            <span>Травень — серпень 2023</span>
-          </article>
-
-          <article class="education-card">
-            <p>Мови</p>
-            <h3>Українська · Російська · English</h3>
-            <span>Рідна · Вільно · A2</span>
-          </article>
+        <div class="education">
+          <article class="edu"><p>Освіта</p><h3>Донецький національний технічний університет</h3><span>Інженер-конструктор металургійного обладнання · 2003–2008</span></article>
+          <article class="edu"><p>Навчання</p><h3>Project Manager · Projektor Institute</h3><span>Травень — серпень 2023</span></article>
+          <article class="edu"><p>Мови</p><h3>Українська · Російська · Англійська</h3><span>Рідна · Вільно · A2</span></article>
         </div>
       </div>
     </section>
 
     <section class="contact" id="contact">
-      <div class="container contact-grid">
-        <div>
-          <p class="label">Контакти</p>
-
-          <h2>
-            Готовий обговорити процес, який потрібно перетворити
-            на систему.
-          </h2>
-        </div>
-
-        <div class="contact-links">
-          <a href="tel:+380950545287">
-            <span>Телефон</span>
-            <strong>+38 095 054 52 87</strong>
-            <b>↗</b>
-          </a>
-
-          <a href="mailto:olimpieva103@gmail.com">
-            <span>Email</span>
-            <strong>olimpieva103@gmail.com</strong>
-            <b>↗</b>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%BE-%D1%81%D1%82%D0%BE%D0%B9%D0%BA%D0%BE-402515274/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>LinkedIn</span>
-            <strong>Профіль Дмитра Стойка</strong>
-            <b>↗</b>
-          </a>
+      <div class="wrap contact-grid">
+        <div><p class="eyebrow">Контакти</p><h2>Готовий посилити керованість ваших процесів.</h2></div>
+        <div class="links">
+          <a href="tel:+380950545287"><span>Телефон</span><strong>+38 095 054 52 87</strong><b>↗</b></a>
+          <a href="mailto:olimpieva103@gmail.com"><span>Email</span><strong>olimpieva103@gmail.com</strong><b>↗</b></a>
+          <a href="https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%BE-%D1%81%D1%82%D0%BE%D0%B9%D0%BA%D0%BE-402515274/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>Профіль Дмитра Стойка</strong><b>↗</b></a>
+          <a href="./Dmytro_Stoiko_Operations_Business_Process_CV.pdf" download><span>Резюме</span><strong>Завантажити PDF</strong><b>↓</b></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Дмитро Стойко</span>
-      <a href="#top">На початок ↑</a>
-    </div>
-  </footer>
-
+  <footer><div class="wrap footer-row"><span>© <span id="year"></span> Дмитро Стойко</span><a href="#top">На початок ↑</a></div></footer>
   <script>
-    const menuButton = document.getElementById("menuButton");
-    const navigation = document.getElementById("navigation");
-
-    menuButton.addEventListener("click", function () {
-      const isOpen = navigation.classList.toggle("open");
-      menuButton.setAttribute("aria-expanded", String(isOpen));
+    const menu = document.getElementById('menu');
+    const nav = document.getElementById('nav');
+    menu.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      menu.setAttribute('aria-expanded', String(open));
     });
-
-    navigation.querySelectorAll("a").forEach(function (link) {
-      link.addEventListener("click", function () {
-        navigation.classList.remove("open");
-        menuButton.setAttribute("aria-expanded", "false");
-      });
-    });
-
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menu.setAttribute('aria-expanded', 'false');
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
